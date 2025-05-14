@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 400ms cubic-bezier(0.120, 0.860, 0.190, 0.915);
+}
+
+@font-face {
+    font-family: "Loto";
+    src: url(../fonts/lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "Loto Bold";
+    src: url(../fonts/lato/Lato-Bold.ttf);
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: rgb(33, 33, 33);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 64px;
+    border-bottom: 2px white solid;
+}
+
+.right-nav-container,
+.left-nav-container {
+    display: flex;
+    align-items: center;
+}
+
+#nav-link {
+    margin: 0 12px;
+    color: white;
+    font-family: "Loto";
+    text-decoration: none;
+}
+
+#nav-link:hover {
+    color: rgb(255, 213, 0);
+}
+
+#nav-link[data-type="cta"] {
+    background-color: rgb(255, 230, 0);
+    color: rgb(33, 33, 33);
+    padding: 8px 18px;
+}
+
+#nav-link[data-type="cta"]:hover {
+    background-color: rgb(155, 140, 0);
+    color: rgb(33, 33, 33);
+    padding: 8px 22px;
+}
+
+.hr {
+    background-color: white;
+    width: 2px;
+    height: 4px;
+
+}
+
+.logo {
+    margin-right: 24px;
+}
+
+#search-input {
+    width: 256px;
+    height: 32px;
+    border-radius: 0;
+    border: 2px rgb(255, 230, 0) solid;
+    margin-right: 18px;
+    font-family: "Loto";
+}
+
+#search-btn {
+    margin-right: 32px;
+}
+
+#search-btn:hover {
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+#cart-btn {
+    margin-right: 32px;
+}
+
+#cart-btn:hover {
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-right: 48px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 72px;
+    font-family: "Loto Bold";
+    color: white;
+    margin: 128px 0;
+}
