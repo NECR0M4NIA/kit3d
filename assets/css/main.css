@@ -45,6 +45,11 @@ nav {
 
 #nav-link:hover {
     color: rgb(255, 213, 0);
+    transform: scale(1.025);
+}
+
+#nav-link:active {
+    transform: scale(0.90);
 }
 
 #nav-link[data-type="cta"] {
@@ -59,11 +64,23 @@ nav {
     padding: 8px 22px;
 }
 
+hr {
+    border: 2px solid grey;
+    width: 172px;
+    margin: 0 auto 128px auto;
+}
+
 .hr {
     background-color: white;
     width: 2px;
     height: 4px;
 
+}
+
+.footer-hr {
+    background: white;
+    width: 2px;
+    height: 64px;
 }
 
 .logo {
@@ -76,7 +93,11 @@ nav {
     border-radius: 0;
     border: 2px rgb(255, 230, 0) solid;
     margin-right: 18px;
+    background: none;
+    color: white;
     font-family: "Loto";
+    outline: none;
+    padding: 8px;
 }
 
 #search-btn {
@@ -89,7 +110,7 @@ nav {
 }
 
 #cart-btn {
-    margin-right: 32px;
+
 }
 
 #cart-btn:hover {
@@ -109,4 +130,102 @@ h1 {
     font-family: "Loto Bold";
     color: white;
     margin: 128px 0;
+}
+
+#contact-form {
+    background: none;
+    border: 2px rgb(255, 230, 0) solid;
+    border-radius: 12px;
+    display: flex;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 64px;
+    border-top: 2px white solid;
+}
+
+.footer-links-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 128px;
+}
+
+#footer-link {
+    margin: 0 12px;
+    color: white;
+    font-family: "Loto";
+    text-decoration: none;
+}
+
+#footer-link:hover {
+    color: rgb(255, 213, 0);
+    transform: scale(1.025);
+}
+
+#footer-link:active {
+    transform: scale(0.90);
+}
+
+.footer-medias-container {
+    margin: 0 128px;
+}
+
+.footer-media-component {
+    display: flex;
+}
+
+.footer-media-name {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: "Loto";
+    font-weight: 700;
+}
+
+.footer-media-name:hover {
+    color: rgb(255, 213, 0);
+    transform: scale(1.025);
+}
+
+.footer-media-name:active {
+    transform: scale(0.90);
+}
+
+/* ABOUT PAGE */
+.about-description {
+    font-family: "Loto";
+    font-size: 18px;
+    margin: 128px 0;
+    padding: 0 64px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 1153px) {
+    nav {
+        padding: 24px 28px;
+    }
+
+    #nav-link {
+        display: none;
+    }
+
+    .input-container {
+        margin-right: 0;
+    }
+
+    .hr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #search-input {
+        display: none;
+    }
+    
 }
