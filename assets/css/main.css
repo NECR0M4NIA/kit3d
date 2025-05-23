@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     transition: all 400ms cubic-bezier(0.120, 0.860, 0.190, 0.915);
+    scroll-behavior: smooth;
 }
 
 @font-face {
     font-family: "Loto";
     src: url(../fonts/lato/Lato-Regular.ttf);
 }
+
 @font-face {
     font-family: "Loto Bold";
     src: url(../fonts/lato/Lato-Bold.ttf);
@@ -109,9 +111,7 @@ hr {
     cursor: pointer;
 }
 
-#cart-btn {
-
-}
+#cart-btn {}
 
 #cart-btn:hover {
     filter: brightness(0.5);
@@ -137,6 +137,50 @@ h1 {
     border: 2px rgb(255, 230, 0) solid;
     border-radius: 12px;
     display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto 128px auto;
+    padding: 128px 64px;
+}
+
+#contact-form label {
+    margin: 8px 0;
+    color: #FFFFFF;
+    font-family: "Loto";
+}
+
+#contact-form input {
+    background: none;
+    outline: none;
+    color: white;
+    font-family: "Loto";
+    border: 2px rgb(255, 230, 0) solid;
+    padding: 8px 16px;
+}
+
+#contact-form [type="submit"] {
+    width: 30%;
+    margin: 82px auto 0 auto;
+    background-color: rgb(255, 230, 0);
+    color: rgb(33, 33, 33);
+    border: none;
+    padding: 8px 16px;
+    font-family: "Loto";
+}
+
+#contact-form [type="submit"]:hover {
+    background-color: rgb(155, 140, 0);
+    padding: 8px 22px;
+    cursor: pointer;
+}
+
+#contact-form [type="checkbox"] {
+    margin-right: 4px;
+    transform: scale(1.25);
+}
+
+.contact-form-checkbox-container {
+    margin-top: 18px;
 }
 
 footer {
@@ -227,5 +271,5 @@ footer {
     #search-input {
         display: none;
     }
-    
+
 }

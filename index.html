@@ -94,23 +94,28 @@
 
         <form id="contact-form" action="contact">
             <label for="name">Name</label>
-            <input type="text" id="name">
+            <input type="text" id="name" required>
 
             <label for="lastname">Last Name</label>
-            <input type="text" id="lastname">
+            <input type="text" id="lastname" required>
 
             <label for="email">E-Mail</label>
-            <input type="email" id="email">
+            <input type="email" id="email" required>
 
             <label for="password">Password</label>
-            <input type="password" id="password">
+            <input type="password" id="password" required>
 
-            <input type="checkbox" id="check">
-            <label for="check">By clicking on Register, you agree to our Terms and Conditions. Find out how we collect,
-                use and share your data by reading our Privacy Policy and how we use cookies and similar technologies by
-                consulting our Cookie Usage Policy.</label>
+            <div class="contact-form-checkbox-container">
+                <input type="checkbox" id="check" required>
+                <label for="check">By clicking on Register, you agree to our Terms and Conditions. Find out how we
+                    collect,
+                    use and share your data by reading our Privacy Policy and how we use cookies and similar
+                    technologies by
+                    consulting our Cookie Usage Policy.
+                </label>
+            </div>
 
-                <input type="submit" title="Submit">
+            <input type="submit" title="Submit">
         </form>
 
     </div>
